@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: install system updates for ubuntu systems
+      apt:
+        update_cache: yes
+        upgrade: dist
